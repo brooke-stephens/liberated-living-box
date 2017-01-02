@@ -46,7 +46,7 @@ php_version           = "5.6"    # Options: 5.5 | 5.6
 ruby_version          = "latest" # Choose what ruby version should be installed (will also be the default version)
 ruby_gems             = [        # List any Ruby Gems that you want to install
   #"jekyll",
-  "sass",                        # Orbithub - modified so gulp builder can work
+  "sass",                        # LiberatedLiving - modified so gulp builder can work
   #"compass",
 ]
 
@@ -66,8 +66,8 @@ composer_packages     = [        # List any global Composer packages that you wa
 # Default web server document root
 # Symfony's public directory is assumed "web"
 # Laravel's public directory is assumed "public"
-# OrbitHub - changed to /vagrant/public
-public_folder         = "/vagrant/sites/OrbitHub-Web/public"
+# LiberatedLiving - changed to /vagrant/public
+public_folder         = "/vagrant/sites/liberated-living/public"
 
 laravel_root_folder   = "/vagrant/laravel" # Where to install Laravel. Will `composer install` if a composer.json file exists
 laravel_version       = "latest-stable" # If you need a specific version of Laravel, set it here

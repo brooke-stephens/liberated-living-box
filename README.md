@@ -1,4 +1,4 @@
-# orbithub-box
+# liberated-living-box
 
 Provisioning environment for local development based on Vagrant and Vaprobash.
 
@@ -51,7 +51,7 @@ Check out this project using git clone
 
 ```
 cd /wherever/you/keep/stuff
-git clone https://github.com/orbithub/orbithub-box.git
+git clone https://github.com/orbithub/liberated-living-box.git
 ```
 
 If you want to customize the settings, create a local git branch so you can track upstream changes:
@@ -65,7 +65,7 @@ git checkout local-YourInitials
 Clone the liberated-living repo to the sites folder.  This is so we can keep the provisioning project separate from the main project.
 
 ```
-cd orbithub-box
+cd liberated-living-box
 mkdir sites
 cd sites
 git clone https://github.com/orbithub/liberated-living.git

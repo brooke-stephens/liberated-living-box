@@ -51,7 +51,7 @@ Check out this project using git clone
 
 ```
 cd /wherever/you/keep/stuff
-git clone https://github.com/orbithub/liberated-living-box.git
+git clone https://github.com/brooke-stephens/liberated-living-box.git
 ```
 
 If you want to customize the settings, create a local git branch so you can track upstream changes:
@@ -68,7 +68,7 @@ Clone the liberated-living repo to the sites folder.  This is so we can keep the
 cd liberated-living-box
 mkdir sites
 cd sites
-git clone https://github.com/orbithub/liberated-living.git
+git clone https://github.com/brooke-stephens/liberated-living.git
 
 ```
 
@@ -76,7 +76,7 @@ Download a database snapshot from *TODO - where shall we put this?*.  Snapshots 
 
 * current development dump (nightly) - *TODO - link*
 * current master (schema + seed tables only) - *TODO - link*
-* your custom DB dump - if you've got one, just copy it to data/orbithub-db.dump.sql.gz and it will be imported
+* your custom DB dump - if you've got one, just copy it to data/liberated-living-db.dump.sql.gz and it will be imported
 
 Open a command prompt, cd to the folder where you checked this out.  Then start the box:
   
@@ -91,13 +91,13 @@ Finally, update your `/etc/hosts` file (or wherever it is on windows - /windows/
 ```
 # This covers both the older codebase and the new (MK proposed .dev for local env) domains:
 
-192.168.22.10   orbithub.dev www.orbithub.dev tennis.orbithub.dev squash.orbithub.dev tabletennis.orbithub.dev badminton.orbithub.dev ncta.dev www.ncta.dev tennis.ncta.dev squash.ncta.dev tabletennis.ncta.dev badminton.ncta.dev orbithub.org www.orbithub.org tennis.orbithub.org squash.orbithub.org tabletennis.orbithub.org badminton.orbithub.org ncta.org www.ncta.org tennis.ncta.org squash.ncta.org tabletennis.ncta.org badminton.ncta.org
+192.168.22.10   liberatedliving.dev www.liberatedliving.dev
 
 ```
 
 Try it out! 
 
-* Browse to `http://orbithub.dev` (or `http://orbithub.org`)
+* Browse to `http://liberatedliving.dev`
 * Or connect to MySQL on 127.0.0.1 port 3307 (port is forwarded from the VM to your local)
 
 ## Other neat stuff
@@ -111,18 +111,15 @@ Finally, update your `/etc/hosts` file (or wherever it is on windows - /windows/
 ```
 # This covers both the older codebase and the new (MK proposed .dev for local env) domains:
 
-192.168.22.10   orbithub.dev www.orbithub.dev tennis.orbithub.dev squash.orbithub.dev tabletennis.orbithub.dev badminton.orbithub.dev ncta.dev www.ncta.dev tennis.ncta.dev squash.ncta.dev tabletennis.ncta.dev badminton.ncta.dev orbithub.org www.orbithub.org tennis.orbithub.org squash.orbithub.org tabletennis.orbithub.org badminton.orbithub.org ncta.org www.ncta.org tennis.ncta.org squash.ncta.org tabletennis.ncta.org badminton.ncta.org
+192.168.22.10   liberatedliving.dev www.liberatedliving.dev
 
 ```
 
 Try it out! 
 
-* Browse to `http://orbithub.org` (or `http://orbithub.dev` depending on your environment)
+* Browse to `http://liberatedliving.org` (or `http://liberatedliving.dev` depending on your environment)
 * Or connect to MySQL on 192.168.22.10 port 3306
 
 ## Other neat stuff
 
 * if you can temporarily set up your routes to be not-domain-based, http://xip.io/ is great for sharing access to your box on the local network.  If you want to share to anyone in the world, try https://ngrok.com/ .  Port 8000 on your host (your box) should be forwarded to port 80 on the vagrant box, so `ngrok -http 8000` should do it.  Once again, you need to mess with the domain matching so http://*whatever*.ngrok.com pull up the correct site.  Or if you are just demoing try [Chrome Remote Desktop](https://chrome.google.com/webstore/detail/chrome-remote-desktop/gbchcmhmhahfdphkhkmpfmihenigjmpp?hl=en) or [join.me](http://join.me).
-
-
-
